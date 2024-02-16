@@ -42,7 +42,7 @@ android {
         buildConfig = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.9.0"
     }
     packaging {
         resources {
@@ -52,7 +52,8 @@ android {
 }
 
 dependencies {
-
+    implementation("androidx.compose.compiler:compiler:1.9.0")
+    implementation("com.google.ai.client.generativeai:generativeai:0.1.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
